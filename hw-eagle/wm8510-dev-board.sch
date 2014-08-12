@@ -6542,13 +6542,13 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="JP1" library="jumper" deviceset="JP1E" device=""/>
 <part name="JP2" library="jumper" deviceset="JP1E" device=""/>
 <part name="JP3" library="jumper" deviceset="JP1E" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="M2012"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="M2012"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="M2012"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="1nF"/>
-<part name="C14" library="rcl" deviceset="C-EU" device="C1206" value="1nF"/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C1206" value="1nF"/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C1206" value="1nF"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="M2012" value="0R"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="M2012" value="47K"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M2012" value="680R"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="220pF"/>
+<part name="C14" library="rcl" deviceset="C-EU" device="C1206" value="4.7uF"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
 <part name="IC1" library="project-specific-library" deviceset="WM8510" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C1206" value="1uF"/>
@@ -6598,10 +6598,19 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="JP2" gate="A" x="88.9" y="88.9" rot="R180"/>
 <instance part="JP3" gate="A" x="88.9" y="109.22" rot="R180"/>
 <instance part="R1" gate="G$1" x="43.18" y="76.2"/>
-<instance part="R2" gate="G$1" x="50.8" y="104.14" rot="R270"/>
+<instance part="R2" gate="G$1" x="50.8" y="104.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="44.45" y="105.6386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="44.45" y="103.378" size="1.778" layer="96"/>
+</instance>
 <instance part="R3" gate="G$1" x="73.66" y="96.52"/>
-<instance part="C13" gate="G$1" x="60.96" y="104.14" rot="R180"/>
-<instance part="C14" gate="G$1" x="73.66" y="111.76" rot="R270"/>
+<instance part="C13" gate="G$1" x="60.96" y="104.14" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.436" y="103.759" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="59.436" y="108.839" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C14" gate="G$1" x="73.66" y="111.76" smashed="yes" rot="R270">
+<attribute name="NAME" x="67.564" y="117.221" size="1.778" layer="95"/>
+<attribute name="VALUE" x="67.564" y="114.681" size="1.778" layer="96"/>
+</instance>
 <instance part="C15" gate="G$1" x="58.42" y="91.44" rot="R270"/>
 <instance part="C16" gate="G$1" x="58.42" y="76.2" rot="R270"/>
 <instance part="IC1" gate="G$1" x="200.66" y="106.68"/>
